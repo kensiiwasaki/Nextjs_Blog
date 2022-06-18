@@ -41,5 +41,6 @@ export async function getStaticProps() {
   return {
     // propsで返し、propsを使うと自動で埋め込まれる
     props: { filteredPosts },
+    revalidate: 3,
   };
 }
